@@ -76,7 +76,7 @@ These instructions will get you a copy of the project up and running on your loc
 - [X] launch the app
   
     ```bash
-    docker run -p 8081:8080 --name <IMAGE_NAME> music-all-vitrine
+    docker run -it --env PORT=4200 -p 4200:4200 -v ${PWD}:/app music-all-vitrine
     ```
 
 - [X] go to [localhost](http://localhost:8081)
@@ -84,6 +84,28 @@ These instructions will get you a copy of the project up and running on your loc
 ## Install if you don't use docker
 
 - [X] git clone <https://github.com/alkevin/music-all-vitrine.git>
+
+- [X] [Angular-cli](https://cli.angular.io/)
+- install :
+  
+    ```bash
+    npm install -g @angular/cli
+    ```
+
+- [X] in the root project
+- install dependencies :
+  
+    ```bash
+    npm install
+    ```
+
+- [X] launch the app
+  
+    ```bash
+    ng serve
+    ```
+
+- [X] go to [localhost](http://localhost:4200)
 
 ## Running The tests
 
